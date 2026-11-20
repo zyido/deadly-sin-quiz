@@ -1,0 +1,513 @@
+{
+  "$comment": "Weighted question bank for the 7 Deadly Sins Test. Sin keys must stay pride, greed, lust, envy, gluttony, wrath, sloth - the ranking reads them by name. Weights need not sum to the same number per question; scoring is normalised at the end.",
+  "resultCopy": {
+    "pride": {
+      "name": "Pride",
+      "roman": "I",
+      "verdict": "You set the bar yourself, and you refuse to lower it.",
+      "text": "You would rather be right than liked, and you would rather carry something alone than admit it got heavy. Pride is the engine behind every standard you have actually met, and the reason the people closest to you hear \"I am fine\" more often than the truth."
+    },
+    "greed": {
+      "name": "Greed",
+      "roman": "II",
+      "verdict": "You know what everything is worth, including people.",
+      "text": "You know the price of a thing before you know its cost. That makes you hard to fool and good at building, and it means you keep score in rooms where nobody else is playing. Greed turns on you when the holding becomes the point and the drawer stays locked long after what is inside has gone stale."
+    },
+    "lust": {
+      "name": "Lust",
+      "roman": "III",
+      "verdict": "You want things at full volume.",
+      "text": "Not only bodies: a place, a song, a person, the next thing. You are pulled toward what you want before deciding whether you want it, and that is a pulse most people do not have. The sin is not the wanting. It is what you do the morning after, when the wanting is gone and something is still sitting there."
+    },
+    "envy": {
+      "name": "Envy",
+      "roman": "IV",
+      "verdict": "You read everyone else scoreboard, accurately.",
+      "text": "You notice immediately what other people have that you do not. It makes you a good reader of rooms and a bad reader of your own life at one in the morning. Envy only turns fatal when it stays a comparison instead of becoming something you go and build."
+    },
+    "gluttony": {
+      "name": "Gluttony",
+      "roman": "V",
+      "verdict": "You never stop at one, and you know it.",
+      "text": "One more episode, one more plate, one more scroll. You take the world in by the hour and would rather have too much of something good than the correct amount of nothing. The trouble is that enough stops being a feeling and becomes a number you never reach."
+    },
+    "wrath": {
+      "name": "Wrath",
+      "roman": "VI",
+      "verdict": "You notice, immediately, when the line is crossed.",
+      "text": "Your anger arrives fast and articulate, and more often than not it is fair. It has done real good in rooms where nobody else would speak. But a fire that burns clean still leaves ash, and you keep people on a hair trigger they never applied for."
+    },
+    "sloth": {
+      "name": "Sloth",
+      "roman": "VII",
+      "verdict": "You protect your peace, sometimes at the cost of everything else.",
+      "text": "You can sit still in a way most people cannot, and in a loud world that is a skill. The trouble is the distance between rest you chose and rest that turned into avoiding the one piece of work only you can do."
+    }
+  },
+  "questions": [
+    {
+      "prompt": "A friend gets the promotion you were after. Your first honest reaction?",
+      "answers": [
+        {
+          "text": "Ask what they did right, then quietly start doing the same.",
+          "weights": {
+            "envy": 2,
+            "greed": 1
+          }
+        },
+        {
+          "text": "I would have done it better, and I know it.",
+          "weights": {
+            "pride": 3
+          }
+        },
+        {
+          "text": "I am angry at whoever decided.",
+          "weights": {
+            "wrath": 3
+          }
+        },
+        {
+          "text": "Good for them. Less pressure on me.",
+          "weights": {
+            "sloth": 3
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "It is 11pm on a Tuesday. What are you actually doing?",
+      "answers": [
+        {
+          "text": "One more episode. I will stop after this one.",
+          "weights": {
+            "sloth": 2,
+            "gluttony": 1
+          }
+        },
+        {
+          "text": "Polishing something nobody asked me to polish.",
+          "weights": {
+            "pride": 2,
+            "greed": 1
+          }
+        },
+        {
+          "text": "Reading about someone whose life looks better than mine.",
+          "weights": {
+            "envy": 3
+          }
+        },
+        {
+          "text": "Re-reading a message that made me angry at noon.",
+          "weights": {
+            "wrath": 3
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Someone criticises your work in a meeting. What happens inside?",
+      "answers": [
+        {
+          "text": "Instant heat. I am already writing the reply.",
+          "weights": {
+            "wrath": 2,
+            "pride": 1
+          }
+        },
+        {
+          "text": "I go quiet and think about it for three days.",
+          "weights": {
+            "pride": 2,
+            "sloth": 1
+          }
+        },
+        {
+          "text": "I start comparing myself to whoever does it better.",
+          "weights": {
+            "envy": 3
+          }
+        },
+        {
+          "text": "I ask what they would change, and I mean it.",
+          "weights": {
+            "greed": 1,
+            "gluttony": 1,
+            "sloth": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "You open your phone with no plan. Which app do you land in?",
+      "answers": [
+        {
+          "text": "The one where everyone shows their best self.",
+          "weights": {
+            "envy": 2,
+            "pride": 1
+          }
+        },
+        {
+          "text": "A shop, a wishlist, a price tracker.",
+          "weights": {
+            "greed": 3
+          }
+        },
+        {
+          "text": "A game with a progress bar.",
+          "weights": {
+            "sloth": 2,
+            "greed": 1
+          }
+        },
+        {
+          "text": "A feed of things I want to taste, watch or try.",
+          "weights": {
+            "gluttony": 2,
+            "lust": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Your perfect Saturday. You only get one version.",
+      "answers": [
+        {
+          "text": "Me, the couch, nothing scheduled.",
+          "weights": {
+            "sloth": 3
+          }
+        },
+        {
+          "text": "Something I am good at, in front of people who notice.",
+          "weights": {
+            "pride": 3
+          }
+        },
+        {
+          "text": "A long lunch, then a longer dinner.",
+          "weights": {
+            "gluttony": 3
+          }
+        },
+        {
+          "text": "Whatever makes my heart beat faster.",
+          "weights": {
+            "lust": 2,
+            "envy": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "What keeps you awake at night?",
+      "answers": [
+        {
+          "text": "A grudge I have not settled.",
+          "weights": {
+            "wrath": 3
+          }
+        },
+        {
+          "text": "The gap between where I am and where I should be.",
+          "weights": {
+            "pride": 2,
+            "envy": 1
+          }
+        },
+        {
+          "text": "Everything I have not started.",
+          "weights": {
+            "sloth": 2,
+            "greed": 1
+          }
+        },
+        {
+          "text": "Something I want and cannot stop wanting.",
+          "weights": {
+            "lust": 3
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Which sentence would your closest friend use about you?",
+      "answers": [
+        {
+          "text": "Suspiciously comfortable doing nothing.",
+          "weights": {
+            "sloth": 2,
+            "gluttony": 1
+          }
+        },
+        {
+          "text": "Always the sharpest person in the room.",
+          "weights": {
+            "pride": 3
+          }
+        },
+        {
+          "text": "Impossible to win an argument with.",
+          "weights": {
+            "wrath": 2,
+            "pride": 1
+          }
+        },
+        {
+          "text": "Knows what everything costs.",
+          "weights": {
+            "greed": 3
+          }
+        },
+        {
+          "text": "Wants to try everything once.",
+          "weights": {
+            "lust": 2,
+            "gluttony": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Someone cuts the queue in front of you.",
+      "answers": [
+        {
+          "text": "I say something, immediately and clearly.",
+          "weights": {
+            "wrath": 3
+          }
+        },
+        {
+          "text": "I say nothing and think about it all day.",
+          "weights": {
+            "wrath": 2,
+            "pride": 1
+          }
+        },
+        {
+          "text": "I genuinely do not care.",
+          "weights": {
+            "sloth": 3
+          }
+        },
+        {
+          "text": "I notice who lets them, and remember.",
+          "weights": {
+            "envy": 2,
+            "greed": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "What is money for?",
+      "answers": [
+        {
+          "text": "Keeping score.",
+          "weights": {
+            "greed": 3
+          }
+        },
+        {
+          "text": "Paying for experiences.",
+          "weights": {
+            "gluttony": 2,
+            "lust": 1
+          }
+        },
+        {
+          "text": "Proof that I am doing well.",
+          "weights": {
+            "pride": 3
+          }
+        },
+        {
+          "text": "Something that should just be there.",
+          "weights": {
+            "sloth": 2,
+            "greed": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Someone you envy posts the exact news you were hoping for.",
+      "answers": [
+        {
+          "text": "Close the app. Open it again ten minutes later.",
+          "weights": {
+            "envy": 3
+          }
+        },
+        {
+          "text": "Write something warm and mean half of it.",
+          "weights": {
+            "envy": 2,
+            "pride": 1
+          }
+        },
+        {
+          "text": "Congratulate them and feel small for an hour.",
+          "weights": {
+            "pride": 2,
+            "envy": 1
+          }
+        },
+        {
+          "text": "Move on. My life is not their feed.",
+          "weights": {
+            "sloth": 1,
+            "gluttony": 1,
+            "greed": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Being corrected. How do you take it?",
+      "answers": [
+        {
+          "text": "Fine if they are right. Slow if they are loud.",
+          "weights": {
+            "pride": 2,
+            "sloth": 1
+          }
+        },
+        {
+          "text": "It is rare, because I am usually right.",
+          "weights": {
+            "pride": 3
+          }
+        },
+        {
+          "text": "I would rather be corrected than ignored.",
+          "weights": {
+            "greed": 1,
+            "gluttony": 1,
+            "lust": 1
+          }
+        },
+        {
+          "text": "I correct them back.",
+          "weights": {
+            "wrath": 2,
+            "pride": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Your last big purchase was really about...",
+      "answers": [
+        {
+          "text": "Proving something to myself.",
+          "weights": {
+            "pride": 2,
+            "greed": 1
+          }
+        },
+        {
+          "text": "Wanting it much more than needing it.",
+          "weights": {
+            "gluttony": 2,
+            "lust": 1
+          }
+        },
+        {
+          "text": "Finding it cheaper than anyone else could.",
+          "weights": {
+            "greed": 3
+          }
+        },
+        {
+          "text": "A reward for work I have not finished yet.",
+          "weights": {
+            "sloth": 2,
+            "pride": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Sunday night. No deadline, nothing planned.",
+      "answers": [
+        {
+          "text": "Nothing happening is the plan.",
+          "weights": {
+            "sloth": 3
+          }
+        },
+        {
+          "text": "I will get ahead on Monday while nobody is watching.",
+          "weights": {
+            "pride": 2,
+            "greed": 1
+          }
+        },
+        {
+          "text": "Something in the fridge and something on a screen.",
+          "weights": {
+            "gluttony": 2,
+            "lust": 1
+          }
+        },
+        {
+          "text": "I am still annoyed about Friday.",
+          "weights": {
+            "wrath": 2,
+            "sloth": 1
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "Which sentence stings most, because it is a bit true?",
+      "answers": [
+        {
+          "text": "You are not as good at this as you think.",
+          "weights": {
+            "pride": 3
+          }
+        },
+        {
+          "text": "You would sell your own mother for a good price.",
+          "weights": {
+            "greed": 3
+          }
+        },
+        {
+          "text": "You are never actually happy for anyone.",
+          "weights": {
+            "envy": 3
+          }
+        },
+        {
+          "text": "You never stop at one.",
+          "weights": {
+            "gluttony": 3
+          }
+        },
+        {
+          "text": "You are always angry about something.",
+          "weights": {
+            "wrath": 3
+          }
+        },
+        {
+          "text": "You talk and never finish.",
+          "weights": {
+            "sloth": 3
+          }
+        },
+        {
+          "text": "You want it, you get it, you drop it.",
+          "weights": {
+            "lust": 3
+          }
+        }
+      ]
+    }
+  ]
+}
