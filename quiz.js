@@ -158,6 +158,18 @@
     qz.removeAttribute('data-result');
     progress(0);
     toast('');
+    ORDER.forEach(function (k) {
+      var li = qz.querySelector('[data-b="' + k + '"]');
+      if (!li) return;
+      li.querySelector('i').style.width = '';
+      li.querySelector('.qz-bp').textContent = '0%';
+      li.classList.remove('is-top');
+    });
+    qz.querySelector('[data-rn]').textContent = '—';
+    qz.querySelector('[data-n]').textContent = 'Your result';
+    qz.querySelector('[data-v]').textContent = '';
+    qz.querySelector('[data-t]').textContent = '';
+    qz.querySelector('[data-s]').textContent = '';
     show(questionPanel(0));
   }
 
