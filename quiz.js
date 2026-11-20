@@ -158,7 +158,7 @@
     qz.removeAttribute('data-result');
     progress(0);
     toast('');
-    show(introPanel);
+    show(questionPanel(0));
   }
 
   /* A finished test is shareable as #a=1,0,3,... — one answer index per question. */
